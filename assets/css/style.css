@@ -1,0 +1,607 @@
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+#form .form {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px 1px gray;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#form .form .image {
+  width: 150px;
+  height: 150px;
+}
+#form .form .image img {
+  width: 100%;
+  height: 100%;
+}
+#form .form input {
+  padding: 10px;
+}
+#form .form .button {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#form .form .button div, #form .form .button a {
+  cursor: pointer;
+  width: 100px;
+  padding: 8px;
+  background-color: #f45d96;
+  color: white;
+  text-align: center;
+}
+
+#table {
+  width: 100%;
+}
+#table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#table table thead, #table table tbody {
+  width: 100%;
+}
+#table table tr td {
+  text-align: center;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.menu-list {
+  max-width: 300px;
+  height: 100%;
+  z-index: 110;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(226, 226, 226);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 0;
+  left: -300px;
+  transition: all 0.3s ease;
+}
+.menu-list .icons {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.menu-list .icons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.menu-list .icons > div span {
+  color: #f45d96;
+}
+.menu-list .menu-btn {
+  max-width: 300px;
+  background-color: gray;
+  text-align: end;
+  padding: 8px;
+  overflow: hidden;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+.menu-list .menu-btn .btn {
+  padding: 3px 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.menu-list .menu-btn .btn i {
+  color: white;
+}
+.menu-list .menu-btn .btn-list {
+  text-align: start;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+nav .nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav .logo {
+  cursor: pointer;
+}
+nav .nav .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav .nav-list p {
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav .nav .nav-list p:hover {
+  color: #f45d96;
+}
+nav .nav .nav-list p a {
+  color: black;
+}
+nav .nav .nav-list .sub {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav .nav .nav-list .sub .sub-nav {
+  background-color: cyan;
+  position: absolute;
+  top: 110%;
+  right: -20px;
+  width: 80px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  display: none;
+  transition: all 0.3s ease;
+}
+nav .nav .nav-list .sub:hover .sub-nav {
+  display: block;
+  top: 100%;
+}
+nav .nav .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+nav .nav .icons img {
+  cursor: pointer;
+}
+nav .nav .icons .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+nav .nav .icons .second p {
+  margin-bottom: 0;
+}
+nav .nav .icons .thrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+nav .nav .icons .thrid p {
+  margin-bottom: 0;
+}
+nav .nav .icons .thrid p span {
+  color: #f45d96;
+}
+nav .nav .menu-button {
+  display: none;
+}
+
+#banner {
+  background-image: url("../image/hero-1.jpg");
+}
+#banner .banner {
+  padding: 200px 0;
+}
+#banner .banner .text {
+  max-width: 400px;
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  flex-direction: column;
+}
+#banner .banner .text p {
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+#banner .banner .text h1 {
+  font-weight: 500;
+  font-family: "Libre Baskerville", serif;
+  font-size: 43px;
+}
+#banner .banner .text a {
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  width: 150px;
+  padding: 8px;
+  text-align: center;
+  background-color: #f45d96;
+  color: white;
+  border-radius: 20px;
+}
+
+#freshness .freshness {
+  padding: 50px 0;
+}
+#freshness .freshness .row > div {
+  padding: 15px;
+}
+#freshness .freshness .row > div .card {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+}
+#freshness .freshness .row > div .card h3 {
+  font-size: 24px;
+  font-family: "Libre Baskerville", serif;
+  border-bottom: 1px solid #f45d96;
+}
+#freshness .freshness .row > div .card p {
+  border-top: 1px solid #f45d96;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+#flower .flower {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#flower .flower .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#flower .flower .header span {
+  color: #f45d96;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+#flower .flower .header h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 42px;
+}
+#flower .flower .secim {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#flower .flower .secim p {
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #f45d96;
+}
+#flower .flower .secim p:first-child {
+  padding: 1px 8px;
+  border: 2px solid #f45d96;
+}
+#flower .flower .elave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#flower .flower .elave .sort {
+  padding: 8px 20px;
+  background-color: #f45d96;
+  color: white;
+}
+#flower .flower .elave input {
+  padding: 6px;
+}
+#flower .flower .elave .fav-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f45d96;
+  border-radius: 50%;
+  color: white;
+}
+#flower .flower .elave .fav-icon a {
+  color: white;
+}
+#flower .flower .elave .fav-icon span {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1px 5px;
+  border-radius: 50%;
+}
+#flower .flower .row > div {
+  padding: 10px;
+}
+#flower .flower .row > div .card {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#flower .flower .row > div .card .image {
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+}
+#flower .flower .row > div .card .image .sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 10px;
+  background-color: black;
+  color: white;
+}
+#flower .flower .row > div .card .image .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: -50px;
+  transition: all 0.3s ease;
+  left: 30px;
+}
+#flower .flower .row > div .card .image .icon i {
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  cursor: pointer;
+}
+#flower .flower .row > div .card .image .icon i:hover {
+  background-color: #f45d96;
+  color: white;
+  transform: rotateZ(360deg);
+}
+#flower .flower .row > div .card .image img {
+  width: 100%;
+  height: 100%;
+}
+#flower .flower .row > div .card .image:hover .icon {
+  bottom: 10px;
+}
+#flower .flower .row > div .card .icon-text {
+  padding: 15px 0 20px 0;
+  height: 30%;
+  position: relative;
+}
+#flower .flower .row > div .card .icon-text h3 {
+  text-align: center;
+  font-size: 18px;
+}
+#flower .flower .row > div .card .icon-text span {
+  position: absolute;
+  width: 100px;
+  bottom: 5px;
+  left: calc((100% - 100px) / 2);
+  text-align: center;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+#flower .flower .row > div .card .icon-text a {
+  position: absolute;
+  bottom: -30px;
+  width: 100px;
+  left: calc((100% - 100px) / 2);
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #f45d96;
+  font-weight: 700;
+}
+#flower .flower .row > div .card:hover span {
+  left: -100px;
+}
+#flower .flower .row > div .card:hover a {
+  bottom: 5px;
+}
+#flower .flower .load-more {
+  width: 150px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f45d96;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#custom-flower {
+  background-image: url("../image/call-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#custom-flower .custom-flower {
+  padding: 100px 0;
+}
+#custom-flower .custom-flower .text {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+#custom-flower .custom-flower .text span {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+#custom-flower .custom-flower .text h2 {
+  font-size: 60px;
+  font-family: "Sevillana", cursive;
+}
+#custom-flower .custom-flower .text .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+#custom-flower .custom-flower .text .button a {
+  width: 130px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #f45d96;
+}
+#custom-flower .custom-flower .text .button .first {
+  background-color: #f45d96;
+  color: white;
+}
+#custom-flower .custom-flower .text .button .second {
+  background-color: white;
+  color: #f45d96;
+}
+
+#first .first {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first .first .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+}
+#first .first .text h3 {
+  text-align: center;
+  font-family: "Sevillana", cursive;
+}
+#first .first .text span {
+  font-size: 20px;
+}
+#first .first .text p {
+  color: gray;
+}
+
+footer .top-footer {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+footer .top-footer .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .top-footer p {
+  max-width: 700px;
+}
+footer .main-footer {
+  border-top: 1px solid rgba(151, 151, 151, 0.521);
+  border-bottom: 1px solid rgba(150, 150, 150, 0.521);
+  padding: 20px 0;
+}
+footer .main-footer > div {
+  padding: 20px;
+}
+footer .main-footer > div .card {
+  border: none;
+}
+footer .main-footer > div .card h3 {
+  font-family: "Libre Baskerville", serif;
+}
+footer .main-footer > div .card p {
+  color: #444444;
+  padding: 5px 0;
+  cursor: pointer;
+}
+footer .main-footer > div .card .email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+footer .main-footer > div .card .email span {
+  font-weight: bold;
+}
+footer .bottom-footer {
+  padding: 10px 0;
+  text-align: center;
+}
+footer .bottom-footer p {
+  text-align: center;
+}
+footer .bottom-footer p i, footer .bottom-footer p span {
+  color: #f45d96;
+  cursor: pointer;
+}
+footer .bottom-footer p span {
+  padding: 1px 3px;
+  border: 1px solid #f45d96;
+}
+
+@media screen and (max-width: 992px) {
+  nav .nav .nav-list, nav .nav .icons {
+    display: none;
+  }
+  nav .nav .menu-button {
+    display: block;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .top-footer {
+    flex-direction: column;
+    align-items: start;
+  }
+}/*# sourceMappingURL=style.css.map */

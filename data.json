@@ -1,0 +1,54 @@
+{
+  "main": [
+    {
+      "id": "2",
+      "image": "./assets/image/product-2.jpg",
+      "name": "Fly Me To The Moon",
+      "price": 150
+    },
+    {
+      "name": "Fly Me To The Moondsgdfg",
+      "price": "27.5",
+      "image": "file:///C:/Users/ClassTime/Desktop/final%20exam/assets/image/product-3.jpg",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "image": "./assets/image/product-5.jpg",
+      "name": "Fly Me To The Moon",
+      "price": 28.5
+    },
+    {
+      "id": "6",
+      "image": "./assets/image/product-6.jpg",
+      "name": "Fly Me To The Moon",
+      "price": 27.7
+    },
+    {
+      "id": "7",
+      "image": "./assets/image/product-7.jpg",
+      "name": "Fly Me To The Moon",
+      "price": 37.5
+    },
+    {
+      "id": "8",
+      "image": "./assets/image/product-8.jpg",
+      "name": "Fly Me To The Moon",
+      "price": 17.5
+    }
+  ],
+  "favorite": [
+    {
+      "id": "2",
+      "image": "./assets/image/product-2.jpg",
+      "name": "Fly Me To The Moon",
+      "price": 150
+    },
+    {
+      "id": "3",
+      "name": "Fly Me To The Moondsgdfg",
+      "price": "27.5",
+      "image": "file:///C:/Users/ClassTime/Desktop/final%20exam/assets/image/product-3.jpg"
+    }
+  ]
+}
